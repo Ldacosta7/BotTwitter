@@ -25,11 +25,11 @@ jours_restants = (date_debut_saison - today).days
 # Création du texte du tweet
 
 if jours_restants <=0 :
-    texte_tweet = (f"NBA Season started {-1 * jours_restants} ago ! Have fun this year ! THUNDER UP !! ")
+    print(f"NBA Season started {-1 * jours_restants} ago ! Have fun this year ! THUNDER UP !! ")
 else : 
-    texte_tweet = (f"Today is {today}, NBA 2023-2024 Season will start in {jours_restants} days!")
+   print(f"Today is {today}, NBA 2023-2024 Season will start in {jours_restants} days!")
 
 # On poste le tweet
-api.update_status(texte_tweet)
+#api.update_status(texte_tweet)
 
 print("Tweet posté avec succès !")
